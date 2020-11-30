@@ -1,18 +1,31 @@
 server:
   port: 8765
-  
+eureka:
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+    service-url:
+      defaultZone: http://localhost:8761/eureka
+      
+    
 spring:
   application:
     name: gateway-server
-
-eureka:
-  client:
-    service-url:
-      defaultZone: http://localHost:8761/eureka
-      
+    
 zuul:
   routes:
     users:
-      path: /user/**
+      path: /users/**
       serviceId: user-service
       strip-prefix: false
+      
+endpoints:
+  beans:
+    enabled: true
+    sensitive: false
+  loggers:
+    enabled: true
+    sensitive: false
+  jolokia:
+    enabled: true
+    sensitive: false
