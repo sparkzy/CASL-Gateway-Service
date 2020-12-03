@@ -15,14 +15,3 @@ zuul:
       path: /users/**
       serviceId: user-service
       strip-prefix: false
-      
-endpoints:
-  beans:
-    enabled: true
-    sensitive: false
-  loggers:
-    enabled: true
-    sensitive: false
-  jolokia:
-    enabled: true
-    sensitive: false

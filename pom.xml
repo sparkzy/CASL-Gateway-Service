@@ -8,7 +8,7 @@
 		<version>2.3.7.BUILD-SNAPSHOT</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>cgg.sparkzy.casl</groupId>
+	<groupId>gg.sparkzy.casl</groupId>
 	<artifactId>gateway-service</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>gateway-service</name>
